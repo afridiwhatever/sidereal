@@ -1,0 +1,53 @@
+/* ================================= */
+/*      custom properties */
+/* ================================= */
+:root {
+  /* font-family*/
+  --ff-inter: "Inter", sans-serif;
+
+  /* font size */
+  --fs-h1: 58px;
+  --fs-h2: 44px;
+  --fs-h3: 28px;
+  --fs-h4: 22px;
+
+  /* font weight */
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  /* lineheight */
+  --lh-1: 84px;
+  --lh-2: 64px;
+  --lh-3: 40px;
+  --lh-4: 32px;
+  --lh-5: 24px;
+  --lh-6: 16px;
+  --lh-7: 14px;
+  --lh-8: 12px;
+
+  /* colors */
+  --clr-blue-ryb: #0052ff;
+  --clr-neon-blue: #4a6dff;
+  --clr-rick-black: #0a0b0d;
+  --clr-black-coral: #5b616e;
+  --clr-silver-chalice: #afb2b5;
+  --clr-white: #ffffff;
+  --clr-ghost-white: #f5f8ff;
+  --clr-gainsboro: #dedfe2;
+  --clr-sea-green: #098551;
+  --clr-amaranth-red: #cf202f;
+}
+
+/* ================================= */
+/*     reset */
+/* =================================*/
+
+body {
+  font-family: var(--ff-inter);
+}
+
+/* ================================= */
+/*     utilities & reused styles */
+/* ================================= */
