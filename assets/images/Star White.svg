@@ -1,0 +1,9 @@
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path id="Star 1" d="M20 0L24.5255 15.4745L40 20L24.5255 24.5255L20 40L15.4745 24.5255L0 20L15.4745 15.4745L20 0Z" fill="url(#paint0_angular_9_1282)"/>
+<defs>
+<radialGradient id="paint0_angular_9_1282" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(20 20) rotate(90) scale(20)">
+<stop stop-color="white" stop-opacity="0.64"/>
+<stop offset="1" stop-color="white"/>
+</radialGradient>
+</defs>
+</svg>
