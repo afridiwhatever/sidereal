@@ -1,0 +1,40 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="16" height="16" fill="#1E1E1E"/>
+<g id="03_HomeV3" clip-path="url(#clip0_1_2847)">
+<rect width="1440" height="4195" transform="translate(-781 -864)" fill="white"/>
+<g id="08 Effects">
+<g id="Group 271" opacity="0.4">
+<g id="Ellipse 10" filter="url(#filter0_f_1_2847)">
+<ellipse cx="223.167" cy="437.808" rx="240" ry="180" transform="rotate(-60 223.167 437.808)" fill="#EDFFAB"/>
+</g>
+</g>
+</g>
+<g id="01 Header">
+<g id="Group 233">
+<g id="Group 12">
+<g id="Card 2">
+<rect id="Rectangle 13" x="-235.5" y="-419.5" width="349" height="463" rx="15.5" fill="white" stroke="#DEDFE2"/>
+<g id="Group 4">
+<g id="Frame 3">
+<g id="verified_FILL1_wght400_GRAD0_opsz48 2">
+<circle id="Ellipse 3" cx="8" cy="8" r="4" fill="white"/>
+<path id="Vector" d="M5.7665 15L4.49984 12.8333L1.98317 12.3167L2.2665 9.86667L0.666504 8L2.2665 6.15L1.98317 3.7L4.49984 3.18333L5.7665 1L7.99984 2.03333L10.2332 1L11.5165 3.18333L14.0165 3.7L13.7332 6.15L15.3332 8L13.7332 9.86667L14.0165 12.3167L11.5165 12.8333L10.2332 15L7.99984 13.9667L5.7665 15ZM7.28317 10.2167L11.0665 6.46667L10.3165 5.78333L7.28317 8.78333L5.69984 7.13333L4.93317 7.88333L7.28317 10.2167Z" fill="#0052FF"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<filter id="filter0_f_1_2847" x="-373.565" y="-188.745" width="1193.47" height="1253.11" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="200" result="effect1_foregroundBlur_1_2847"/>
+</filter>
+<clipPath id="clip0_1_2847">
+<rect width="1440" height="4195" fill="white" transform="translate(-781 -864)"/>
+</clipPath>
+</defs>
+</svg>

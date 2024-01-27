@@ -2,6 +2,9 @@
 custom properties
 reset
 utilities & reused styles
+header
+hero
+featured section
 */
 
 /* ================================= */
@@ -171,6 +174,18 @@ h1 {
   line-height: var(--lh-1);
 }
 
+h4 {
+  font-size: var(--fs-h4);
+  font-weight: var(--fw-semibold);
+  line-height: var(--lh-4);
+}
+
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
 /* ================================= */
 /*          header */
 /* ================================= */
@@ -262,22 +277,26 @@ h1 {
   display: flex;
   gap: 30px;
   margin-block-start: -250px;
-  align-items: flex-start;
 }
 
 .card-1 {
-  width: 33%;
-}
-
-.card-1-banner {
-  border: 3px solid red;
+  min-width: calc((100% - 2 * 30px) / 3);
+  border-radius: 16px;
+  border: 1px solid var(--Gainsboro, #dedfe2);
   overflow: hidden;
-  max-height: 300px;
 }
 
-.card-1-banner img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  object-position: bottom;
+.card-1-content {
+  padding: 24px;
+}
+
+.card-1-content span {
+  display: inline;
+  font-weight: var(--fw-semibold);
+}
+
+.card-1-content img {
+  width: unset;
+  display: inline;
+  margin-bottom: -3px;
 }
