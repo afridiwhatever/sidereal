@@ -190,6 +190,7 @@ img {
   width: 100%;
   height: auto;
   object-fit: cover;
+  object-position: center;
 }
 
 .red {
@@ -288,10 +289,13 @@ img {
 /*          featured */
 /* ================================= */
 
-.featured .container {
+.featured {
+  margin-block-start: -250px;
+}
+
+.card-1-container {
   display: flex;
   gap: 30px;
-  margin-block-start: -250px;
 }
 
 .card-1 {
@@ -418,8 +422,28 @@ img {
 
 .card-2-banner img {
   aspect-ratio: 1.7/1;
+  transition: 200ms ease-in-out;
+}
+
+.card-2-banner:hover img {
+  cursor: pointer;
+  transform: scale(1.08);
 }
 
 .card-2 > h4 {
   padding-block: 24px;
+}
+
+/* ================================= */
+/*         trending nfts */
+/* ================================= */
+
+.trending .container > h3 {
+  margin-block-start: 64px;
+  margin-block-end: 32px;
+}
+
+.trending .card-1:nth-of-type(2) .card-1-banner img {
+  aspect-ratio: 1/1;
+  object-position: top;
 }
