@@ -155,10 +155,6 @@ body {
   background: var(--clr-blue-ryb);
   color: var(--clr-white);
 }
-/* 
-.section {
-  padding-block-start: 150px;
-} */
 
 .place-center {
   max-width: max-content;
@@ -303,6 +299,7 @@ img {
   border-radius: 16px;
   border: 1px solid var(--Gainsboro, #dedfe2);
   overflow: hidden;
+  background: var(--clr-white);
 }
 
 .card-1-content {
@@ -446,4 +443,31 @@ img {
 .trending .card-1:nth-of-type(2) .card-1-banner img {
   aspect-ratio: 1/1;
   object-position: top;
+}
+
+.trending .card-1-container {
+  position: relative;
+}
+
+.trending .card-1-container > img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 40px;
+  width: 40px;
+  padding: 8px;
+  border: 1px solid var(--clr-gainsboro);
+  border-radius: 50%;
+  background: var(--clr-white);
+  cursor: pointer;
+}
+
+.trending .card-1-container > img:nth-of-type(1) {
+  left: 0;
+  transform: translateX(-50%);
+}
+
+.trending .card-1-container > img:nth-of-type(2) {
+  right: 0;
+  transform: translateX(50%) rotateY(180deg);
 }
