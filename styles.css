@@ -86,10 +86,6 @@ li {
   list-style: none;
 }
 
-img {
-  height: auto;
-}
-
 input,
 button,
 select,
@@ -194,6 +190,7 @@ img {
   height: auto;
   object-fit: cover;
   object-position: center;
+  pointer-events: none;
 }
 
 .red {
@@ -363,6 +360,10 @@ img {
   background: white;
 }
 
+.list-right .card-11:last-child > p {
+  margin-inline-start: -8px;
+}
+
 .collection-image-container {
   position: relative;
 }
@@ -377,8 +378,8 @@ img {
   position: absolute;
   right: 0;
   bottom: 0;
-  height: 24px;
-  width: 24px;
+  height: 18px;
+  width: 18px;
 }
 
 .card-11 .collection-details {
@@ -551,10 +552,9 @@ img {
 /* ================================= */
 
 .footer {
-  margin-block-start: 62px;
+  margin-block: 62px;
   background: var(--clr-white);
   border-top: 1px solid var(--clr-gainsboro);
-  margin-bottom: 100px;
 }
 
 .footer .footer-top {
@@ -648,4 +648,18 @@ img {
 .footer-link:first-of-type {
   font-weight: var(--fw-semibold);
   margin-block-end: 24px;
+}
+
+.footer-bottom {
+  color: var(--clr-silver-chalice);
+  font-size: var(--fs-xs);
+  line-height: var(--lh-6);
+  margin-block-start: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-bottom > div {
+  display: flex;
+  gap: 32px;
 }
