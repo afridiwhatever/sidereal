@@ -5,6 +5,7 @@ utilities & reused styles
 header
 hero
 featured section
+curated collections
 */
 
 /* ================================= */
@@ -122,6 +123,7 @@ body {
   font-size: var(--fs-body);
   font-weight: var(--fw-medium);
   line-height: var(--lh-5);
+  overflow-x: hidden;
 }
 
 /* ================================= */
@@ -173,7 +175,11 @@ h1 {
   font-weight: var(--fw-bold);
   line-height: var(--lh-1);
 }
-
+h3 {
+  font-size: var(--fs-h3);
+  font-weight: var(--fw-semibold);
+  line-height: var(--lh-3);
+}
 h4 {
   font-size: var(--fs-h4);
   font-weight: var(--fw-semibold);
@@ -184,6 +190,14 @@ img {
   width: 100%;
   height: auto;
   object-fit: cover;
+}
+
+.red {
+  color: var(--clr-amaranth-red);
+}
+
+.green {
+  color: var(--clr-sea-green);
 }
 
 /* ================================= */
@@ -199,6 +213,7 @@ img {
   font-size: var(--fs-small);
   padding-block: 24px;
   border-block-end: 1px solid #4a6dff;
+  z-index: 99;
 }
 
 .header .navbar {
@@ -299,4 +314,112 @@ img {
   width: unset;
   display: inline;
   margin-bottom: -3px;
+}
+
+/* ================================= */
+/*          curated collections */
+/* ================================= */
+
+.curated-collection-section {
+  margin-block-start: 60px;
+}
+
+.curated-collection-selector {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.curated-collection-selector select {
+  max-width: max-content;
+  font-size: var(--fs-h3);
+  font-weight: var(--fw-semibold);
+  line-height: var(--lh-3);
+  color: var(--clr-blue-ryb);
+}
+
+.curated-collection-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 30px;
+  margin-block: 32px;
+}
+
+.card-11 {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  padding: 16px;
+  margin: 2px 0px;
+  font-weight: var(--fw-semibold);
+  border-bottom: 1px solid var(--Gainsboro, #dedfe2);
+  background: white;
+}
+
+.collection-image-container {
+  position: relative;
+}
+
+.card-11 .collection-image {
+  height: 64px;
+  width: 64px;
+  border-radius: 50%;
+}
+
+.card-11 .verification-tick {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 24px;
+  width: 24px;
+}
+
+.card-11 .collection-details {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.card-11 .collection-details:last-child {
+  margin-inline-start: auto;
+  text-align: end;
+}
+
+.floor-price span {
+  display: inline;
+  font-weight: var(--fw-regular);
+}
+
+.curated-collection-section .btn {
+  margin-inline: auto;
+}
+
+/* ================================= */
+/*         categories */
+/* ================================= */
+
+.categeories h3 {
+  margin-block-start: 64px;
+  margin-block-end: 32px;
+}
+
+.categories-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.card-2 {
+  border-radius: 16px;
+  border: 1px solid var(--Gainsboro, #dedfe2);
+  background-color: var(--clr-white);
+  overflow: hidden;
+}
+
+.card-2-banner img {
+  aspect-ratio: 1.7/1;
+}
+
+.card-2 > h4 {
+  padding-block: 24px;
 }
