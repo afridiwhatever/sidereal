@@ -56,6 +56,10 @@ footer
   --clr-gainsboro: #dedfe2;
   --clr-sea-green: #098551;
   --clr-amaranth-red: #cf202f;
+
+  /* transition */
+  --transition-1: 100ms;
+  --transition-2: 200ms ease-in-out;
 }
 
 /* ================================= */
@@ -150,6 +154,11 @@ input::placeholder {
   padding: 12px 24px;
   border-radius: 24px;
   min-width: 160px;
+  transition: var(--transition-2);
+}
+
+.btn:hover {
+  transform: scale(1.05);
 }
 
 .btn.btn-white {
@@ -169,6 +178,29 @@ input::placeholder {
 
 .text-center {
   text-align: center;
+}
+
+.hover-underline {
+  position: relative;
+  max-width: max-content;
+  cursor: pointer;
+}
+
+.hover-underline::before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background-color: black;
+  bottom: 0;
+  opacity: 0;
+  transform: scaleX(0.2);
+  transition: var(--transition-2);
+}
+
+.hover-underline:is(:hover, :focus-visible)::before {
+  opacity: 1;
+  transform: scaleX(1);
 }
 
 h1 {
@@ -195,7 +227,6 @@ img {
   height: auto;
   object-fit: cover;
   object-position: center;
-  pointer-events: none;
 }
 
 .red {
@@ -225,6 +256,15 @@ img {
   background: var(--clr-white);
 }
 
+.card-1-banner > img {
+  cursor: pointer;
+  transition: var(--transition-2);
+}
+
+.card-1:hover .card-1-banner > img {
+  transform: scale(1.05);
+}
+
 .card-1-content {
   padding: 24px;
 }
@@ -235,6 +275,12 @@ img {
 
 .card-1-content span {
   font-weight: var(--fw-semibold);
+  transition: var(--transition-1);
+  cursor: pointer;
+}
+
+.card-1-content span:hover {
+  color: var(--clr-blue-ryb);
 }
 
 .card-1-content img {
@@ -253,7 +299,7 @@ img {
 
 .card-2-banner img {
   aspect-ratio: 1.7/1;
-  transition: 200ms ease-in-out;
+  transition: var(--transition-2);
 }
 
 .card-2-banner:hover img {
@@ -262,7 +308,7 @@ img {
 }
 
 .card-2 > h4 {
-  padding-block: 24px;
+  margin-block: 24px;
 }
 
 /*      card 6       */
@@ -278,6 +324,11 @@ img {
   height: 64px;
   width: 64px;
   margin-inline: auto;
+  transition: var(--transition-2);
+}
+
+.card-6:hover img {
+  transform: scale(1.2);
 }
 
 .card-6 > h4 {
@@ -292,6 +343,7 @@ img {
   border: 1px solid var(--Gainsboro, #dedfe2);
   background-color: var(--clr-white);
   overflow: hidden;
+  cursor: pointer;
 }
 
 .card-10-banner {
@@ -306,7 +358,6 @@ img {
 }
 
 .card-10:hover img {
-  cursor: pointer;
   transform: scale(1.05);
 }
 
@@ -331,6 +382,7 @@ img {
   font-weight: var(--fw-semibold);
   border-bottom: 1px solid var(--Gainsboro, #dedfe2);
   background: white;
+  cursor: pointer;
 }
 
 .card-11 .collection-image-container {
@@ -353,6 +405,11 @@ img {
 
 .card-11 .collection-details p:nth-of-type(1) {
   margin-block-end: 12px;
+  transition: var(--transition-2);
+}
+
+.card-11 .collection-details p:nth-of-type(1):hover {
+  color: var(--clr-blue-ryb);
 }
 
 .card-11 .collection-details:last-child {
