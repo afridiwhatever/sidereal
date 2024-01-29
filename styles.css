@@ -6,6 +6,11 @@ header
 hero
 featured section
 curated collections
+categories
+trending
+resources
+getting started
+footer
 */
 
 /* ================================= */
@@ -137,7 +142,6 @@ body {
 }
 
 input::placeholder {
-  font: inherit;
   font-size: var(--fs-small);
   font-weight: var(--fw-regular);
   line-height: var(--lh-6);
@@ -174,11 +178,13 @@ h1 {
   font-weight: var(--fw-bold);
   line-height: var(--lh-1);
 }
+
 h3 {
   font-size: var(--fs-h3);
   font-weight: var(--fw-semibold);
   line-height: var(--lh-3);
 }
+
 h4 {
   font-size: var(--fs-h4);
   font-weight: var(--fw-semibold);
@@ -201,6 +207,103 @@ img {
   color: var(--clr-sea-green);
 }
 
+/* ================================= */
+/*           cards */
+/* ================================= */
+
+.card-container {
+  display: flex;
+  gap: 30px;
+}
+
+.card-1 {
+  min-width: calc((100% - 2 * 30px) / 3);
+  border-radius: 16px;
+  border: 1px solid var(--Gainsboro, #dedfe2);
+  overflow: hidden;
+  background: var(--clr-white);
+}
+
+.card-1-content {
+  padding: 24px;
+}
+
+.card-1-content :is(span, img) {
+  display: inline;
+}
+
+.card-1-content span {
+  font-weight: var(--fw-semibold);
+}
+
+.card-1-content img {
+  width: unset;
+  margin-bottom: -3px;
+}
+
+.card-11 {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  padding: 16px;
+  margin: 2px 0px;
+  font-weight: var(--fw-semibold);
+  border-bottom: 1px solid var(--Gainsboro, #dedfe2);
+  background: white;
+}
+
+.card-11 .collection-image-container {
+  position: relative;
+}
+
+.collection-image-container .collection-image {
+  height: 64px;
+  width: 64px;
+  border-radius: 50%;
+}
+
+.collection-image-container .verification-tick {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 18px;
+  width: 18px;
+}
+
+.card-11 .collection-details p:nth-of-type(1) {
+  margin-block-end: 12px;
+}
+
+.card-11 .collection-details:last-child {
+  margin-inline-start: auto;
+  text-align: end;
+}
+
+.floor-price span {
+  display: inline;
+  font-weight: var(--fw-regular);
+}
+
+.card-2 {
+  border-radius: 16px;
+  border: 1px solid var(--Gainsboro, #dedfe2);
+  background-color: var(--clr-white);
+  overflow: hidden;
+}
+
+.card-2-banner img {
+  aspect-ratio: 1.7/1;
+  transition: 200ms ease-in-out;
+}
+
+.card-2-banner:hover img {
+  cursor: pointer;
+  transform: scale(1.08);
+}
+
+.card-2 > h4 {
+  padding-block: 24px;
+}
 /* ================================= */
 /*          header */
 /* ================================= */
@@ -243,7 +346,7 @@ img {
   position: relative;
 }
 
-.nav-search > img {
+.nav-search .nav-search-icon {
   position: absolute;
   height: 16px;
   width: 16px;
@@ -269,7 +372,6 @@ img {
 .hero {
   background: #0051fff1;
   padding-block: 150px 330px;
-  padding-block-start: 150px;
 }
 
 .hero p {
@@ -290,34 +392,6 @@ img {
 
 .featured {
   margin-block-start: -250px;
-}
-
-.card-container {
-  display: flex;
-  gap: 30px;
-}
-
-.card-1 {
-  min-width: calc((100% - 2 * 30px) / 3);
-  border-radius: 16px;
-  border: 1px solid var(--Gainsboro, #dedfe2);
-  overflow: hidden;
-  background: var(--clr-white);
-}
-
-.card-1-content {
-  padding: 24px;
-}
-
-.card-1-content span {
-  display: inline;
-  font-weight: var(--fw-semibold);
-}
-
-.card-1-content img {
-  width: unset;
-  display: inline;
-  margin-bottom: -3px;
 }
 
 /* ================================= */
@@ -349,53 +423,8 @@ img {
   margin-block: 32px;
 }
 
-.card-11 {
-  display: flex;
-  align-items: center;
-  gap: 32px;
-  padding: 16px;
-  margin: 2px 0px;
-  font-weight: var(--fw-semibold);
-  border-bottom: 1px solid var(--Gainsboro, #dedfe2);
-  background: white;
-}
-
 .list-right .card-11:last-child > p {
   margin-inline-start: -8px;
-}
-
-.collection-image-container {
-  position: relative;
-}
-
-.card-11 .collection-image {
-  height: 64px;
-  width: 64px;
-  border-radius: 50%;
-}
-
-.card-11 .verification-tick {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  height: 18px;
-  width: 18px;
-}
-
-.card-11 .collection-details {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.card-11 .collection-details:last-child {
-  margin-inline-start: auto;
-  text-align: end;
-}
-
-.floor-price span {
-  display: inline;
-  font-weight: var(--fw-regular);
 }
 
 .curated-collection-section .btn {
@@ -417,27 +446,6 @@ img {
   gap: 30px;
 }
 
-.card-2 {
-  border-radius: 16px;
-  border: 1px solid var(--Gainsboro, #dedfe2);
-  background-color: var(--clr-white);
-  overflow: hidden;
-}
-
-.card-2-banner img {
-  aspect-ratio: 1.7/1;
-  transition: 200ms ease-in-out;
-}
-
-.card-2-banner:hover img {
-  cursor: pointer;
-  transform: scale(1.08);
-}
-
-.card-2 > h4 {
-  padding-block: 24px;
-}
-
 /* ================================= */
 /*         trending nfts */
 /* ================================= */
@@ -456,7 +464,7 @@ img {
   position: relative;
 }
 
-.trending .card-container > img {
+.card-container :is(.arrow-left, .arrow-right) {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -469,12 +477,12 @@ img {
   cursor: pointer;
 }
 
-.trending .card-container > img:nth-of-type(1) {
+.trending .card-container .arrow-left {
   left: 0;
   transform: translateX(-50%);
 }
 
-.trending .card-container > img:nth-of-type(2) {
+.trending .card-container .arrow-right {
   right: 0;
   transform: translateX(50%) rotateY(180deg);
 }
