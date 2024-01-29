@@ -8,8 +8,7 @@ featured section
 curated collections
 categories
 trending
-resources
-getting started
+resources and getting started
 footer
 */
 
@@ -216,6 +215,8 @@ img {
   gap: 30px;
 }
 
+/*      card 1       */
+/* ----------------- */
 .card-1 {
   min-width: calc((100% - 2 * 30px) / 3);
   border-radius: 16px;
@@ -241,6 +242,86 @@ img {
   margin-bottom: -3px;
 }
 
+/*      card 2       */
+/* ----------------- */
+.card-2 {
+  border-radius: 16px;
+  border: 1px solid var(--Gainsboro, #dedfe2);
+  background-color: var(--clr-white);
+  overflow: hidden;
+}
+
+.card-2-banner img {
+  aspect-ratio: 1.7/1;
+  transition: 200ms ease-in-out;
+}
+
+.card-2-banner:hover img {
+  cursor: pointer;
+  transform: scale(1.08);
+}
+
+.card-2 > h4 {
+  padding-block: 24px;
+}
+
+/*      card 6       */
+/* ----------------- */
+.card-6 {
+  min-width: calc((100% - 2 * 30px) / 3);
+  padding: 32px;
+  border-radius: 16px;
+  background: var(--clr-white);
+}
+
+.card-6 img {
+  height: 64px;
+  width: 64px;
+  margin-inline: auto;
+}
+
+.card-6 > h4 {
+  padding-block-start: 32px;
+  padding-block-end: 16px;
+}
+
+/*      card10       */
+/* ----------------- */
+.card-10 {
+  border-radius: 16px;
+  border: 1px solid var(--Gainsboro, #dedfe2);
+  background-color: var(--clr-white);
+  overflow: hidden;
+}
+
+.card-10-banner {
+  padding: 8px;
+  padding-block-end: 0px;
+}
+
+.card-10-banner img {
+  aspect-ratio: 2/1;
+  border-radius: 8px;
+  transition: 200ms ease-in-out;
+}
+
+.card-10:hover img {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.card-10-content {
+  padding: 24px;
+}
+
+.card-10-content span {
+  font-size: var(--fs-small);
+  line-height: var(--lh-6);
+  padding-block-start: 24px;
+}
+
+/*      card 11      */
+/* ----------------- */
 .card-11 {
   display: flex;
   align-items: center;
@@ -284,26 +365,6 @@ img {
   font-weight: var(--fw-regular);
 }
 
-.card-2 {
-  border-radius: 16px;
-  border: 1px solid var(--Gainsboro, #dedfe2);
-  background-color: var(--clr-white);
-  overflow: hidden;
-}
-
-.card-2-banner img {
-  aspect-ratio: 1.7/1;
-  transition: 200ms ease-in-out;
-}
-
-.card-2-banner:hover img {
-  cursor: pointer;
-  transform: scale(1.08);
-}
-
-.card-2 > h4 {
-  padding-block: 24px;
-}
 /* ================================= */
 /*          header */
 /* ================================= */
@@ -495,66 +556,6 @@ img {
   margin-block-end: 32px;
 }
 
-.card-10 {
-  border-radius: 16px;
-  border: 1px solid var(--Gainsboro, #dedfe2);
-  background-color: var(--clr-white);
-  overflow: hidden;
-}
-
-.card-10-banner {
-  padding: 8px;
-  padding-block-end: 0px;
-}
-
-.card-10-banner img {
-  aspect-ratio: 2/1;
-  border-radius: 8px;
-  transition: 200ms ease-in-out;
-}
-
-.card-10:hover img {
-  cursor: pointer;
-  transform: scale(1.05);
-}
-
-.card-10-content {
-  padding: 24px;
-}
-
-.card-10-content span {
-  font-size: var(--fs-small);
-  line-height: var(--lh-6);
-  padding-block-start: 24px;
-}
-
-/* ================================= */
-/*          getting started       */
-/* ================================= */
-.getting-started .container > h3 {
-  margin-block-start: 64px;
-  margin-block-end: 32px;
-}
-
-.card-6 {
-  min-width: calc((100% - 2 * 30px) / 3);
-  padding: 32px;
-  border-radius: 16px;
-  background: var(--clr-white);
-  background-color: var(--clr-silver-chalice);
-}
-
-.card-6 img {
-  height: 64px;
-  width: 64px;
-  margin-inline: auto;
-}
-
-.card-6 > h4 {
-  padding-block-start: 32px;
-  padding-block-end: 16px;
-}
-
 /* ================================= */
 /*          footer     */
 /* ================================= */
@@ -633,6 +634,7 @@ img {
 .footer-social-container img {
   height: 32px;
   width: 32px;
+  pointer-events: initial;
 }
 
 .footer-social-container img:hover {
