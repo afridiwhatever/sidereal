@@ -237,6 +237,19 @@ img {
   color: var(--clr-sea-green);
 }
 
+.section {
+  position: relative;
+}
+
+.is-bg {
+  position: absolute;
+  width: 480px;
+  height: 360px;
+  border-radius: 480px;
+  filter: blur(250px);
+  z-index: -1;
+}
+
 /* ================================= */
 /*           cards */
 /* ================================= */
@@ -564,6 +577,20 @@ img {
   gap: 30px;
 }
 
+.category-bg-1 {
+  top: -10%;
+  left: 50%;
+  transform: translateX(-50%) rotate(-60deg);
+  background: #36f1cd;
+}
+
+.category-bg-2 {
+  top: 50%;
+  left: 30%;
+  transform: translateX(-50%) rotate(-60deg);
+  background: #c8ffbe;
+}
+
 /* ================================= */
 /*         trending nfts */
 /* ================================= */
@@ -611,6 +638,23 @@ img {
 .resources .container > h3 {
   margin-block-start: 64px;
   margin-block-end: 32px;
+}
+.resources-bg-1 {
+  top: 0;
+  left: 50%;
+  background: #c8ffbe;
+  transform: rotate(120deg);
+}
+.resources-bg-2 {
+  left: 40%;
+  top: 40%;
+  background: #36f1cd;
+  transform: rotate(120deg);
+}
+.resources-bg-3 {
+  left: 10%;
+  background: #edffab;
+  transform: rotate(120deg);
 }
 
 /* ================================= */
